@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/learn-co-curriculum/redux-initial-dispatch/issues"
   },
-  "homepage": "https://github.com/learn-co-curriculum/redux-initial-dispatch#readme"
+  "homepage": "https://github.com/learn-co-curriculum/redux-initial-dispatch#readme",
+  "dependencies": {
+    "redux": "^4.0.5"
+  }
 }

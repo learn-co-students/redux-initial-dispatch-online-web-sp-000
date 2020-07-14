@@ -1,4 +1,4 @@
-let state = {count: 0};
+let state;
 
 function changeState(state, action){
     switch (action.type) {
@@ -17,3 +17,5 @@ function dispatch(action){
 function render(){
     document.body.textContent = state.count
 }
+
+dispatch({ type: '@@INIT' })

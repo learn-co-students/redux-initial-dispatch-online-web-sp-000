@@ -1,7 +1,6 @@
-let state 
-// let state = {count: 0};
+let state = {count: 0};
 
-function changeState(state = { count: 0 }, action){
+function changeState(state, action){
     switch (action.type) {
       case 'INCREASE_COUNT':
         return {count: state.count + 1}

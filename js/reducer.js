@@ -8,7 +8,7 @@ function changeState(state, action){
         return state;
     }
   }
-
+ 
 function dispatch(action){
     state = changeState(state, action)
     render()

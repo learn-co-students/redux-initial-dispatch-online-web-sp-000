@@ -1,7 +1,9 @@
-let state = {count: 0};
+let state;
 
 function changeState(state, action){
     switch (action.type) {
+        case '@@INIT':
+            return { count: 0 }
       case 'INCREASE_COUNT':
         return {count: state.count + 1}
       default:
@@ -15,5 +17,7 @@ function dispatch(action){
 }
 
 function render(){
-    document.body.textContent = state.count
+    document.getElementById('counter').textContent = state.count
 }
+
+dispatch({ type: '@@INIT' })
